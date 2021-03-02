@@ -1,5 +1,5 @@
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   .overlay {
     height: 0%;
@@ -43,7 +43,11 @@ body {
     height: 7em;
     padding-bottom: 1rem;
 }
-
+.landinglogo-mobile{
+    width: 13em;
+    height: 4em;
+    padding: 1rem 0rem .5rem .8rem;
+}
 .registerbtn{
     color:azure;
     background-color: black;
@@ -51,14 +55,84 @@ body {
     border-radius: 30px;
 }
   /* Nav compressed */
-  @media screen and (max-height: 450px) {
+  @media screen and (max-width: 450px) {
+    .desktop-nav{
+        display: none;
+    }
+    .landinglogo{
+        width: 13em;
+        height: 4em;
+        padding: 1rem 0rem .5rem .8rem;
+    }
+
     .overlay {overflow-y: auto;}
     .overlay a {font-size: 20px}
     .overlay .closebtn {
     font-size: 40px;
-    top: 15px;
-    right: 35px;
+    top: 9px;
+    right: 9px;
     }
   }
 
+  @media screen and (min-width: 640px) {
+  .burger{
+      display: none;
+  }
   
+  }
+  @media screen and (min-width: 1024px) {
+    .burger{
+        display: none;
+    }
+    .myHeader{
+        padding-top: 2%;
+    }
+    .myNavbar{
+    width: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+    .landingmenu{
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        justify-content: space-evenly;
+    }
+    .landingmenu button{
+        color:azure;
+        background-color: black;
+        border-radius: 30px;
+    }
+    .landingmenu button:hover{
+        color:black;
+        background-color: rgb(201, 219, 219);
+        cursor: pointer;
+        font-weight: 400;
+    }
+    li{
+        display: flex;
+        justify-content: space-evenly;
+        padding: .3rem 1.2rem 0rem 1.2rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .landinglogo{
+        width: 10%;
+        height: 5%;
+        padding-left: 2%;
+    }
+    .navmenu{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .burger{
+        display: none;
+    }
+}
