@@ -1,80 +1,64 @@
-*{
-    font-family: poppins;
-}
+body {
+    font-family: 'Lato', sans-serif;
+  }
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ff9625;
+    background-image: linear-gradient(147deg, #ff9625 2%, #ff9625 11%, #ffc130 67%, #ff9966 100%);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
 
-a{
+  .overlay-content {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .overlay a {
+    padding: 1.2rem;
     text-decoration: none;
-    color: black;
-}
-.body{
-    background-color: brown;
-    padding: 10% 0% 15.5% 0%;
-}
-.body2{
-    background-color: #E5E7EB;
-    padding: 5% 0% 5% 0%;
-}
-
-.myHeader{
-    background-color: aquamarine;
-    padding-top: 2%;
-}
-.myNavbar{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.landingmenu{
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    justify-content: space-evenly;
+    font-size: 20px;
+    color: #2c2a2a;
+    display: block;
+    transition: 0.3s;
+  }
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  .overlay .closebtn {
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    font-size: 50px;
+  }
+  .landinglogo{
+    width: 20em;
+    height: 7em;
+    padding-bottom: 1rem;
 }
 
-.landingmenu button{
+.registerbtn{
     color:azure;
     background-color: black;
-    /* padding: 5px 10px 5px 10px ; */
+    padding: 10px;
     border-radius: 30px;
 }
-.landingmenu button:hover{
-    color:black;
-    background-color: rgb(201, 219, 219);
-    cursor: pointer;
-    font-weight: 400;
-}
+  /* Nav compressed */
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
 
-li{
-    display: flex;
-    justify-content: space-evenly;
-    padding: .3rem 1.2rem 0rem 1.2rem;
-    font-weight: 500;
-}
-.landinglogo{
-    width: 10%;
-    height: 5%;
-}
-
-.navmenu{
-    display: flex;
-    flex-direction: row;
-}
-
-
-
-/* Footer */
-.footerwrap{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-}
-.footerimage{
-    padding-top: .5rem;
-    height: 2rem;
-    width: 7rem;
-    cursor: pointer;
-}
-.footpad{
-    padding-top: .5rem;
-    color:#6B7280   ;
-}
+  
