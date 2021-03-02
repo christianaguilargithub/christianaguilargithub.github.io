@@ -1,0 +1,80 @@
+*{
+    font-family: poppins;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.body{
+    background-color: brown;
+    padding: 10% 0% 15.5% 0%;
+}
+.body2{
+    background-color: #E5E7EB;
+    padding: 5% 0% 5% 0%;
+}
+
+.myHeader{
+    background-color: aquamarine;
+    padding-top: 2%;
+}
+.myNavbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.landingmenu{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-evenly;
+}
+
+.landingmenu button{
+    color:azure;
+    background-color: black;
+    /* padding: 5px 10px 5px 10px ; */
+    border-radius: 30px;
+}
+.landingmenu button:hover{
+    color:black;
+    background-color: rgb(201, 219, 219);
+    cursor: pointer;
+    font-weight: 400;
+}
+
+li{
+    display: flex;
+    justify-content: space-evenly;
+    padding: .3rem 1.2rem 0rem 1.2rem;
+    font-weight: 500;
+}
+.landinglogo{
+    width: 10%;
+    height: 5%;
+}
+
+.navmenu{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* Footer */
+.footerwrap{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.footerimage{
+    padding-top: .5rem;
+    height: 2rem;
+    width: 7rem;
+    cursor: pointer;
+}
+.footpad{
+    padding-top: .5rem;
+    color:#6B7280   ;
+}
