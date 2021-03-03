@@ -116,14 +116,14 @@ body {
         width: auto;
     }
     .mobile-img1{
-        height: 11rem;
+        height: 10rem;
         width: auto;
     }
     .mobile-img2{
-        height: 11rem;
+        height: 10rem;
         width: auto;
-        padding-top: 2rem;
-        padding-left: 5rem;
+        padding-top: 1rem;
+        padding-left: 5.7rem;
     }
     /* Mobile overlay */
     .overlay {overflow-y: auto;}
