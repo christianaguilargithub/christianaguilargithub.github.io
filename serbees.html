@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Link to fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<!-- fontawsome link -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Serbees</title>
 </head>
     <body>
@@ -16,10 +21,10 @@
                         <img class="landinglogo"src="./images/site-landing-logo.png">
                         <nav class="navmenu">
                             <ul class="landingmenu">
-                                <li><a href="#">HOME</a></li>
-                                <li><a href="#">HOW IT WORKS</a></li>
-                                <li><a href="#">OUR TEAM</a></li>
-                                <li><a href="#">FAQ</a></li>
+                                <li><a class="a"href="#">HOME</a></li>
+                                <li><a class="a"href="#">HOW IT WORKS</a></li>
+                                <li><a class="a"href="#">OUR TEAM</a></li>
+                                <li><a class="a"href="#">FAQ</a></li>
                                 <button class="landingmenu-button">REGISTER AS SERBEES PROVIDER</button>
                             </ul>
                         </nav>
@@ -28,21 +33,23 @@
                 <div class="body1">
                     <p id="dl">Download the App Now!</p>
                     <div class="body-container">
-                            <div>
+                            <div class="divbod">
                                 <div class="box">
                                     <span style="font-weight: 600; padding-left: 20px;">Serbees Provider App</span><br>
                                     <span style="font-weight: 300; font-size: .8em;">Start earning now!</span>
                                 </div>
+                                <div class="hollowbox1"></div>
+                                <div class="hollowbox2"></div>
                                 <div class="require">
                                     <span>Requires Android</span><br>
                                     <span>2.2.3 and up</span><br>
+                                    <button id="dlbtn">Download</button>
                                 </div>
-                                <button id="dlbtn">Download</button>
                             </div>
                             <div class="bodyimg">
-                                <img class="bodyimg-size"src="./images/cellb.png"></img>
+                                <img class="bodyimg-size imgpos"src="./images/cellb.png"></img>
                                 <p class="between"></p>
-                                <img class="bodyimg-size"src="./images/cella.png"></img>
+                                <img class="bodyimg-size imgpos"src="./images/cella.png"></img>
                             </div>
                             <div>
                                 <div class="box2">
@@ -53,7 +60,38 @@
                             </div>
                     </div>
                 </div>
-                <div class="body2">
+                <div class="body2-container">
+                    <div class="serbees-socmed">
+                        <img src="./images/serbees.png" alt="" id="serbod2">
+                        <div class="socmed">
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                    </div>
+                    <div class="support">
+                        <span style="color:#6B7280;">Support</span><br>
+                        <br><span><a class="bod2a" href="#">CONTACT US</a></span>
+                        <br><span><a class="bod2a" href="#">FAQ</a></span>
+                        <br><span><a class="bod2a" href="#">HOW IT WORKS</a></span>
+                        <br><span><a class="bod2a" href="#">DOWNLOAD</a></span>
+                        <br><span><a class="bod2a" href="#">REGISTRATION</a></span>
+                        <br><span><a class="bod2a" href="#">FEEDBACK</a></span>
+                    </div>
+                    <div class="serbees-bod2">
+                        <span style="color:#6B7280;">Serbees</span><br>
+                        <br><span><a class="bod2a" href="#">ABOUT US</a></span>
+                        <br><span><a class="bod2a" href="#">CAREERS</a></span>
+                        <br><span><a class="bod2a" href="#">NEWS</a></span>
+                        <br><span><a class="bod2a" href="#">JOIN US</a></span>
+                        <br><span><a class="bod2a" href="#">COMPANY PROFILE</a></span>
+                    </div>
+                    <div class="signup">
+                        <span style="color:#1F2937;">Stay up to date with Serbees</span>
+                        <input class="input-email"placeholder="Enter your e-mail address">
+                        <button class="signup-btn">Sign up</button>
+
+                    </div>
                 </div>
             </div>
             <div class="footerwrap">
@@ -96,7 +134,7 @@
                     <img class="footerimage2" src="./images/apple-app-store-download.png">
                 </div>
                 <div class="footpad">
-                    <a class="footterms" href="#">Terms and Policy |</a> 
+                    <a class="footterms" href="#">Terms and Policy |</a>
                     <a class="footterms" href="#">Privacy and Policy</a>
                 </div>
                 <div class="footpad">

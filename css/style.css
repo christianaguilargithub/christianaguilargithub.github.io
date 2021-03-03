@@ -59,6 +59,9 @@ body {
     .desktop-nav{
         display: none;
     }
+    .bodyimg{
+        display: none;
+    }
     .landinglogo{
         width: 10em;
         height: 3em;
@@ -131,13 +134,7 @@ body {
     }
     /* Mobile overlay */
   }
-
-  @media screen and (min-width: 640px) {
-  .burger{
-      display: none;
-  }
-  }
-  @media screen and (min-width: 1024px) {
+  @media only screen and (max-width: 987px) and (min-width: 451px)  {
     .burger{
         display: none;
     }
@@ -155,7 +152,7 @@ body {
         flex-direction: row;
         text-decoration: none;
         justify-content: space-evenly;
-        padding-left: 80px;
+        padding-left: 40px;
     }
     .landingmenu-button{
         color:azure;
@@ -167,24 +164,30 @@ body {
         background-image: linear-gradient(147deg, #ff9625 2%, #ff9625 11%, #ffc130 67%, #ff9966 100%);
         cursor: pointer;
         font-weight: 550;
-        
     }
     li{
         display: flex;
         justify-content: space-evenly;
         padding: .3rem 1.2rem 0rem 1.2rem;
-        font-size: 0.700rem;
+        font-size: 0.900rem;
         font-weight: 500;
+        color: #1F2937;
         text-decoration: none;
     }
     a{
         text-decoration: none;
-        color:  #374151;
+        color:#6B7280;;
     }
+    .a{
+        text-decoration: none;
+        color:#1F2937;
+    }
+
     .landinglogo{
-        width: 10%;
-        height: 5%;
-        padding-left: 10%;
+        width: 10em;
+        height: 3.5em;
+        padding-left: 2em;
+        padding-top: 1em;
 
     }
     .navmenu{
@@ -227,12 +230,14 @@ body {
         display: flex;
         justify-content: space-between;
     }
-    .body2{
+    .imgpos{
+        z-index: 1;
+    }
+    .body2-container{
         background-color: #E5E7EB;
         width: auto;
-        height: 19vh;
+        height: 18vh;
     }
-
     /* Footer */
     .footerwrap{
         width: auto;
@@ -255,7 +260,6 @@ body {
         width: 6.8rem;
         cursor: pointer;
         padding-left: 2px;
-        
     }
     .footpad{
         padding-top: .5rem;
@@ -283,11 +287,11 @@ body {
     }
     #dlbtn{
         border-radius: 30px;
-        padding: 5px;
+        padding: 6px;
         padding-left: 20px;
         padding-right: 20px;
         margin-left: 100px;
-        font-size: .7em;
+        font-size: 1em;
         font-weight: 550;
         color: whitesmoke;
         background-color: #3B82F6;
@@ -309,6 +313,30 @@ body {
         margin-right: 30px ;
         margin-left: 45px;
     }
+    .hollowbox1{
+        height: 30px;
+        width: 130px;
+        margin-left: 200px;
+        border-style: solid;
+        border-width: thin;
+        border-top: none;
+        border-right: none;
+        z-index: 1;
+        position:absolute;
+        border-color: whitesmoke;
+    }
+    .hollowbox2{
+        height: 30px;
+        width: 200px;
+        margin-left: 580px;
+        border-style: solid;
+        border-width: thin;
+        border-top: none;
+        border-left: none;
+        z-index: 1;
+        position:absolute;
+        border-color: whitesmoke;
+    }
     #comming{
         padding: 5px;
         padding-left: 20px;
@@ -318,9 +346,448 @@ body {
         font-weight: 300;
         font-size: 1.3em;
     }
-}
-@media screen and (min-width: 1280px) {
+
+    /* body 2 */
+    .body2-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    i{
+        color: #4B5563;
+        font-size: 1.2rem;
+        padding: 5px;
+        cursor: pointer;
+    }
+    #serbod2{
+        width: 120px;
+        padding-top:1.5rem;
+        padding-bottom: 10px;
+    }
+    .serbees-socmed{
+        padding-left: 5%;
+    }
+    .bod2a{
+        color:#1F2937;
+        font-size: .8em;
+    }
+    .support{
+        line-height: 80%;
+        padding-top: 10px;
+        padding-left: 10%;
+    }
+    .serbees-bod2{
+        line-height: 80%;
+        padding-top: 10px;
+        padding-left: 30px;
+    }
+    .signup{
+        padding-top: 7px;
+        flex-direction: column;
+        display: flex;
+        padding-left: 35px;
+    }
+    .signup-btn{
+        width: 100px;
+        color: whitesmoke;
+        background-color: #e94b46;
+        border-radius: 5px;
+    }
+    .signup-btn:hover{
+        color: whitesmoke;
+        background-color: #f10d06;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .input-email{
+        outline: 0;
+        border-width: 0 0 2px;
+        border-color: #1F2937;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .input-email:focus {
+        border-color: rgb(240, 78, 3)
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width:2000px) and (min-width: 988px) {
     .burger{
         display: none;
     }
+    .myHeader{
+        padding-top: 2%;
+    }
+    .myNavbar{
+    width: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+    .landingmenu{
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        justify-content: space-evenly;
+        padding-left: 40px;
+    }
+    .landingmenu-button{
+        color:azure;
+        background-color: black;
+        border-radius: 10px;
+    }
+    .landingmenu button:hover{
+        color:rgb(54, 0, 0);
+        background-image: linear-gradient(147deg, #ff9625 2%, #ff9625 11%, #ffc130 67%, #ff9966 100%);
+        cursor: pointer;
+        font-weight: 550;
+    }
+    li{
+        display: flex;
+        justify-content: space-evenly;
+        padding: .3rem 1.2rem 0rem 1.2rem;
+        font-size: 0.900rem;
+        font-weight: 500;
+        color: #1F2937;
+        text-decoration: none;
+    }
+    a{
+        text-decoration: none;
+        color:#6B7280;;
+    }
+    .a{
+        text-decoration: none;
+        color:#1F2937;
+    }
+
+    .landinglogo{
+        width: 10%;
+        height: 5%;
+        padding-left: 5%;
+        padding-top: .3%;
+
+    }
+    .navmenu{
+        display: flex;
+        flex-direction: row;
+    }
+    .bgmid{
+        background-color: #ff9625;
+        background-image: linear-gradient(147deg, #ff9625 2%, #ff9625 11%, #ffc130 67%, #ff9966 100%);
+        width: auto;
+    }
+    .body-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: auto;
+    }
+    .body{
+        width: auto;
+        height: 56vh;
+    }
+    #dl{
+        text-align: center;
+        font-family: Poppins;
+        font-size: 1.4em;
+        letter-spacing: 0.08em;
+    }
+    .bodyimg{
+        display: flex;
+        flex-direction: row;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    .between{
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+    }
+    .bodyimg-size{
+        width: 10rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .imgpos{
+        z-index: 1;
+    }
+    .body2-container{
+        background-color: #E5E7EB;
+        width: auto;
+        height: 18vh;
+    }
+
+    /* Footer */
+    .footerwrap{
+        width: auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        background-color: azure;
+    }
+    .footerimage11{
+        padding-top: .3rem;
+        height: 1.8rem;
+        width: 6.8rem;
+        cursor: pointer;
+        padding-right: 2px;
+    }
+    .footerimage22{
+        padding-top: .02rem;
+        padding-bottom: .1rem;
+        height: 1.6rem;
+        width: 6.8rem;
+        cursor: pointer;
+        padding-left: 2px;
+    }
+    .footpad{
+        padding-top: .5rem;
+        color:#6B7280   ;
+    }
+    .box{
+        border-color: whitesmoke;
+        border-radius: 5px;
+        border-width: thin;
+        border-style: solid;
+        text-align: right;
+        padding: 3px;
+        padding-left: 5px;
+        margin-top: 80px;
+        margin-right: 30px ;
+        margin-left: 50px;
+    }
+    .require{
+        text-align: right;
+        font-size: .7em;
+        padding: 3px;
+        padding-left: 5px;
+        margin-top: 80px;
+        margin-right: 90px;
+    }
+    #dlbtn{
+        border-radius: 30px;
+        padding: 6px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 100px;
+        font-size: 1em;
+        font-weight: 550;
+        color: whitesmoke;
+        background-color: #3B82F6;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    #dlbtn:hover{
+        background-color: #2563EB;
+    }
+    .box2{
+        border-color: whitesmoke;
+        border-radius: 5px;
+        border-width: thin;
+        border-style: solid;
+        text-align: left;
+        padding: 3px;
+        padding-left: 5px;
+        margin-top: 80px;
+        margin-right: 30px ;
+        margin-left: 45px;
+    }
+    .hollowbox1{
+        height: 30px;
+        width: 130px;
+        margin-left: 200px;
+        border-style: solid;
+        border-width: thin;
+        border-top: none;
+        border-right: none;
+        z-index: 1;
+        position:absolute;
+        border-color: whitesmoke;
+    }
+    .hollowbox2{
+        height: 30px;
+        width: 200px;
+        margin-left: 580px;
+        border-style: solid;
+        border-width: thin;
+        border-top: none;
+        border-left: none;
+        z-index: 1;
+        position:absolute;
+        border-color: whitesmoke;
+    }
+    #comming{
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 120px;
+        margin-left: 60px;
+        font-weight: 300;
+        font-size: 1.3em;
+    }
+
+    /* body 2 */
+    .body2-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    i{
+        color: #4B5563;
+        font-size: 1.2rem;
+        padding: 5px;
+        cursor: pointer;
+    }
+    #serbod2{
+        width: 120px;
+        padding-top:1.5rem;
+        padding-bottom: 10px;
+    }
+    .serbees-socmed{
+        padding-left: 5%;
+    }
+    .bod2a{
+        color:#1F2937;
+        font-size: .8em;
+    }
+    .support{
+        line-height: 80%;
+        padding-top: 10px;
+        padding-left: 10%;
+    }
+    .serbees-bod2{
+        line-height: 80%;
+        padding-top: 10px;
+        padding-left: 30px;
+    }
+    .signup{
+        padding-top: 7px;
+        flex-direction: column;
+        display: flex;
+        padding-left: 35px;
+    }
+    .signup-btn{
+        width: 100px;
+        color: whitesmoke;
+        background-color: #e94b46;
+        border-radius: 5px;
+    }
+    .signup-btn:hover{
+        color: whitesmoke;
+        background-color: #f10d06;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .input-email{
+        outline: 0;
+        border-width: 0 0 2px;
+        border-color: #1F2937;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .input-email:focus {
+        border-color: rgb(240, 78, 3)
+      }
+}
+
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    .box{
+        border-color: whitesmoke;
+        border-radius: 5px;
+        border-width: thin;
+        border-style: solid;
+        text-align: right;
+        padding: 3px;
+        padding-left: 0px;
+        margin-top: 80px;
+        margin-right: 30px ;
+        margin-left: 5px;
+    }
+    .divbod{
+        width: 25vw;
+    }
+    #dlbtn{
+        border-radius: 30px;
+        padding: 6px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 15px;
+        font-size: 1em;
+        font-weight: 550;
+        color: whitesmoke;
+        background-color: #3B82F6;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    #dlbtn:hover{
+        background-color: #2563EB;
+    }
+    .hollowbox1{
+        height: 30px;
+        width: 130px;
+        margin-left: 100px;
+        border-style: solid;
+        border-width: thin;
+        border-top: none;
+        border-right: none;
+        z-index: 1;
+        position:absolute;
+        border-color: whitesmoke;
+    }
+    .hollowbox2{
+        height: 20px;
+        width: 140px;
+        margin-top: 24px;
+        margin-left: 500px;
+        border-style: solid;
+        border-width: thin;
+        border-top: none;
+        border-left: none;
+        z-index: 1;
+        position:absolute;
+        border-color: whitesmoke;
+  }
+  .box2{
+    border-color: whitesmoke;
+    border-radius: 5px;
+    border-width: thin;
+    border-style: solid;
+    text-align: left;
+    padding: 3px;
+    padding-left: 5px;
+    margin-top: 80px;
+    margin-right: 30px ;
+    margin-left: 30px;
+}
+#comming{
+    padding: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 120px;
+    margin-left: 35px;
+    font-weight: 300;
+    font-size: 1.3em;
+}
 }
